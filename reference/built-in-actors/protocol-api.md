@@ -20,9 +20,6 @@ The account actor is responsible for user account. If you want to call these met
 
 ### AuthenticateMessage
 
-```
-```
-
 ```go
 func AuthenticateMessage(params AuthenticateMessage) EmptyValue ()
 ```
@@ -42,9 +39,6 @@ Results:
 * `struct` EmptyValue.
 
 ### UniversalReceiverHook
-
-```
-```
 
 ```go
 func UniversalReceiverHook(params RawBytes) EmptyValue ()
@@ -68,9 +62,6 @@ DataCap Actor is responsible for DataCap token management. The ActorCode for Dat
 
 ### Name
 
-```
-```
-
 ```go
 func Name() String {}
 ```
@@ -88,9 +79,6 @@ Results:
 * `String` : DataCap
 
 ### Symbol
-
-```
-```
 
 ```go
 func Symbol() String {}
@@ -110,9 +98,6 @@ Results:
 
 ### TotalSupply
 
-```
-```
-
 ```go
 func TotalSupply() TokenAmount {}
 ```
@@ -131,9 +116,6 @@ Results:
 
 ### Balance
 
-```
-```
-
 ```go
 func Balance(params Address) TokenAmount {}
 ```
@@ -151,9 +133,6 @@ Results:
 * `int256` TokenAmount - the DataCap token balance for the specified wallet address.
 
 ### Transfer
-
-```
-```
 
 ```go
 func Transfer(params TransferParams) TransferReturn {}
@@ -178,9 +157,6 @@ Results:
   * `bytes` RecipientData: data returned from receive hook.
 
 ### TransferFrom
-
-```
-```
 
 ```go
 func TransferFrom(params TransferFromParams) TransferFromReturn {}
@@ -208,9 +184,6 @@ Results:
 
 ### IncreaseAllowance
 
-```
-```
-
 ```go
 func IncreaseAllowance(params IncreaseAllowanceParams) TokenAmount {}
 ```
@@ -230,9 +203,6 @@ Results:
 * `int256` TokenAmount - the new DataCap allowance of the operator address.
 
 ### DecreaseAllowance
-
-```
-```
 
 ```go
 func DecreaseAllowance(params DecreaseAllowanceParams) TokenAmount {}
@@ -254,9 +224,6 @@ Results:
 
 ### RevokeAllowance
 
-```
-```
-
 ```go
 func RevokeAllowance(params RevokeAllowanceParams) TokenAmount {}
 ```
@@ -276,9 +243,6 @@ Results:
 
 ### Burn
 
-```
-```
-
 ```go
 func Burn(params BurnParams) TokenAmount {}
 ```
@@ -297,9 +261,6 @@ Results:
 * `int256` TokenAmount - the updated DataCap token balance of the owner/caller address.
 
 ### BurnFrom
-
-```
-```
 
 ```go
 func BurnFrom(params BurnFromParams) BurnFromReturn {}
@@ -322,9 +283,6 @@ Results:
   * `int256` Amount - the new balance of owner wallet.
 
 ### Allowance
-
-```
-```
 
 ```go
 func Allowance(params GetAllowanceParams) TokenAmount {}
@@ -350,9 +308,6 @@ The miner built-in actor responsible to deal with storage mining operations and 
 
 ### GetPeerID
 
-```
-```
-
 ```go
 func GetPeerID() GetPeerIDReturn {}
 ```
@@ -371,9 +326,6 @@ Results:
   * `bytes` PeerID - the peer ID for the specified storage provider/miner.
 
 ### ChangePeerID
-
-```
-```
 
 ```go
 func ChangePeerID(params ChangePeerIDParams) EmptyValue {}
@@ -394,9 +346,6 @@ Results:
 
 ### GetMultiaddrs
 
-```
-```
-
 ```go
 func GetMultiaddrs() GetMultiAddrsReturn {}
 ```
@@ -416,9 +365,6 @@ Results:
 
 ### ChangeMultiaddrs
 
-```
-```
-
 ```go
 func ChangeMultiaddrs(params ChangeMultiaddrsParams) EmptyValue {}
 ```
@@ -437,9 +383,6 @@ Results:
 * `struct` EmptyValue
 
 ### ChangeWorkerAddress
-
-```
-```
 
 ```go
 func ChangeWorkerAddress(params ChangeWorkerAddressParams) EmptyValue {}
@@ -461,9 +404,6 @@ Results:
 
 ### ConfirmChangeWorkerAddress
 
-```
-```
-
 ```go
 func ConfirmChangeWorkerAddress() EmptyValue {}
 ```
@@ -482,9 +422,6 @@ Results:
 
 ### RepayDebt
 
-```
-```
-
 ```go
 func RepayDebt() EmptyValue {}
 ```
@@ -502,9 +439,6 @@ Results:
 * `struct` EmptyValue
 
 ### GetOwner
-
-```
-```
 
 ```go
 func GetOwner() GetOwnerReturn {}
@@ -525,9 +459,6 @@ Results:
 
 ### ChangeOwnerAddress
 
-```
-```
-
 ```go
 func ChangeOwnerAddress(bytes address) {}
 ```
@@ -545,9 +476,6 @@ Results:
 * `struct` EmptyValue
 
 ### GetBeneficiary
-
-```
-```
 
 ```go
 func GetBeneficiary() GetBeneficiaryReturn {}
@@ -579,9 +507,6 @@ Results:
 
 ### ChangeBeneficiary
 
-```
-```
-
 ```go
 func ChangeBeneficiary(params ChangeBeneficiaryParams) EmptyValue {}
 ```
@@ -603,9 +528,6 @@ Results:
 
 ### IsControllingAddress
 
-```
-```
-
 ```go
 func IsControllingAddress(params IsControllingAddressParams) IsControllingAddressReturn {}
 ```
@@ -623,9 +545,6 @@ Results:
 * `bool` IsControllingAddressReturn - if the specified address is the control address.
 
 ### GetSectorSize
-
-```
-```
 
 ```go
 func GetSectorSize() GetSectorSizeReturn {}
@@ -646,9 +565,6 @@ Results:
 
 ### GetAvailableBalance
 
-```
-```
-
 ```go
 func GetAvailableBalance() GetAvailableBalanceReturn {}
 ```
@@ -667,9 +583,6 @@ Results:
 
 ### WithdrawBalance
 
-```
-```
-
 ```go
 func WithdrawBalance(params WithdrawBalanceParams) WithdrawBalanceReturn {}
 ```
@@ -686,9 +599,6 @@ Results:
 * `int256` WithdrawBalanceReturn - the token amount withdrawn.
 
 ### GetVestingFunds
-
-```
-```
 
 ```go
 func GetVestingFunds() GetVestingFundsReturn {}
@@ -714,9 +624,6 @@ Results:
 Multisig built-in actor is responsible for dealing with operations involving the Filecoin wallet. To interact with a specific multi-signature wallet address, you need to use this wallet address to invoke the methods in the built-in multisig actor. You also need to specify the method number of which method you want to invoke. Please refer to each method for its method number.
 
 ### Propose
-
-```
-```
 
 ```go
 func Propose(params ProposeParams) ProposeReturn {...}
@@ -744,9 +651,6 @@ Results:
 
 ### Approve
 
-```
-```
-
 ```go
 func Approve(params TxnIDParams) ApproveReturn {}
 ```
@@ -770,9 +674,6 @@ Results:
 
 ### Cancel
 
-```
-```
-
 ```go
 func Cancel(param TxnIDParams) EmptyValue {}
 ```
@@ -792,9 +693,6 @@ Results:
 * `struct` EmptyValue.
 
 ### AddSigner
-
-```
-```
 
 ```go
 func AddSigner(params AddSignerParams) EmptyValue {}
@@ -816,9 +714,6 @@ Results:
 
 ### RemoveSigner
 
-```
-```
-
 ```go
 func RemoveSigner(params RemoveSignerParams) EmptyValue {}
 ```
@@ -838,9 +733,6 @@ Results:
 * `struct` EmptyValue.
 
 ### SwapSigner
-
-```
-```
 
 ```go
 func SwapSigner(params SwapSignerParams) EmptyValue {}
@@ -862,9 +754,6 @@ Results:
 
 ### ChangeNumApprovalsThreshold
 
-```
-```
-
 ```go
 func ChangeNumApprovalsThreshold(params ChangeNumApprovalsThresholdParams) EmptyValue {}
 ```
@@ -883,9 +772,6 @@ Results:
 * `struct` EmptyValue.
 
 ### LockBalance
-
-```
-```
 
 ```go
 func LockBalance(params LockBalanceParams) EmptyValue {}
@@ -912,9 +798,6 @@ Storage market actor is responsible for managing storage and retrieval deals. Th
 
 ### AddBalance
 
-```
-```
-
 ```go
 func AddBalance(address Address) EmptyValue {}
 ```
@@ -932,9 +815,6 @@ Results:
 * `struct` EmptyValue.
 
 ### GetBalance
-
-```
-```
 
 ```go
 func GetBalance(address Address) GetBalanceReturn {}
@@ -956,9 +836,6 @@ Results:
 
 ### WithdrawBalance
 
-```
-```
-
 ```go
 func WithdrawBalance(params WithdrawBalanceParams) WithdrawBalanceReturn {}
 ```
@@ -979,9 +856,6 @@ Results:
   * `int256` AmountWithdraw - the token amount withdrawn.
 
 ### PublishStorageDeals
-
-```
-```
 
 ```go
 func PublishStorageDeals(params PublishStorageDealsParams) PublishStorageDealsReturn {}
@@ -1017,9 +891,6 @@ Results:
 
 ### GetDealDataCommitment
 
-```
-```
-
 ```go
 func GetDealDataCommitment(params GetDealDataCommitmentParams) GetDealDataCommitmentReturn {}
 ```
@@ -1040,9 +911,6 @@ Results:
 
 ### GetDealClient
 
-```
-```
-
 ```go
 func GetDealClient(params GetDealClientParams) GetDealClientReturn {}
 ```
@@ -1060,9 +928,6 @@ Results:
 * `bytes` GetDealClientReturn - the wallet address of the client.
 
 ### GetDealProvider
-
-```
-```
 
 ```go
 func GetDealProvider(params GetDealProviderParams) GetDealProviderReturn {}
@@ -1082,9 +947,6 @@ Results:
 
 ### GetDealLabel
 
-```
-```
-
 ```go
 func GetDealLabel(params GetDealLabelParams) GetDealLabelReturn {}
 ```
@@ -1102,9 +964,6 @@ Results:
 * `string` GetDealLabelReturn - the label of this deal.
 
 ### GetDealTerm
-
-```
-```
 
 ```go
 func GetDealTerm(params GetDealTermParams) GetDealTermReturn {}
@@ -1126,9 +985,6 @@ Results:
 
 ### GetDealTotalPrice
 
-```
-```
-
 ```go
 func GetDealTotalPrice(params GetDealTotalPriceParams) GetDealTotalPriceReturn {}
 ```
@@ -1146,9 +1002,6 @@ Results:
 * `int256` GetDealTotalPriceReturn - the token amount that will be paid by the client to the provider.
 
 ### GetDealClientCollateral
-
-```
-```
 
 ```go
 func GetDealClientCollateral(params GetDealClientCollateralParams) GetDealClientCollateralReturn {}
@@ -1168,9 +1021,6 @@ Results:
 
 ### GetDealProviderCollateral
 
-```
-```
-
 ```go
 func GetDealProviderCollateral(params GetDealProviderCollateralParams) GetDealProviderCollateralReturn {}
 ```
@@ -1189,9 +1039,6 @@ Results:
 
 ### GetDealVerified
 
-```
-```
-
 ```go
 func GetDealVerified(params GetDealVerifiedParams) GetDealVerifiedReturn {}
 ```
@@ -1209,9 +1056,6 @@ Results:
 * `bool` GetDealVerifiedReturn - if the deal is verified or not.
 
 ### GetDealActivation
-
-```
-```
 
 ```go
 func GetDealActivation(params GetDealActivationParams) GetDealActivationReturn {}
@@ -1236,9 +1080,6 @@ Results:
 Strorage power actor is responsible for keeping track of the storage power allocated at each storage miner. The ActorCode for the built-in storage power actor is `hex"0004"` which will be used to call methods in the storage power actor. You also need to specify the method number for the method you want to invoke. Please refer to each method for its method number.
 
 ### CreateMiner
-
-```
-```
 
 ```go
 func CreateMiner(params CreateMinerParams) CreateMinerReturn {}
@@ -1265,9 +1106,6 @@ Results:
 
 ### NetworkRawPower
 
-```
-```
-
 ```go
 func NetworkRawPower() NetworkRawPowerReturn {}
 ```
@@ -1285,9 +1123,6 @@ Results:
 * `int256` NetworkRawPowerReturn - the raw storage power of the whole network.
 
 ### MinerRawPower
-
-```
-```
 
 ```go
 func MinerRawPower(params MinerRawPowerParams) MinerRawPowerParams {}
@@ -1310,9 +1145,6 @@ Results:
 
 ### MinerCount
 
-```
-```
-
 ```go
 func MinerCount() MinerCountReturn {}
 ```
@@ -1330,9 +1162,6 @@ Results:
 * `uint64` MinerCountReturn - the count of the miners that the caller address has.
 
 ### MinerConsensusCount
-
-```
-```
 
 ```go
 func MinerConsensusCount() MinerConsensusCountReturn {}
@@ -1356,9 +1185,6 @@ Verified registry actor is responsible for managing verified clients. The ActorC
 
 ### AddVerifiedClient
 
-```
-```
-
 ```go
 func AddVerifiedClient(params AddVerifiedClientParams) EmptyValue {}
 ```
@@ -1378,9 +1204,6 @@ Results:
 * `struct` EmptyValue.
 
 ### RemoveExpiredAllocations
-
-```
-```
 
 ```go
 func RemoveExpiredAllocations(params RemoveExpiredAllocationsParams) RemoveExpiredAllocationsReturn {}
@@ -1404,9 +1227,6 @@ Results:
   * `int256` DataCapRecoverd - The amount of DataCap token reclaimed for the client.
 
 ### GetClaims
-
-```
-```
 
 ```go
 func GetClaims(params GetClaimsParams) GetClaimsReturn {}
@@ -1440,9 +1260,6 @@ Results:
 
 ### ExtendClaimTerms
 
-```
-```
-
 ```go
 func ExtendClaimTerms(params ExtendClaimTermsParams) ExtendClaimTermsReturn {}
 ```
@@ -1467,9 +1284,6 @@ Results:
     * `struct` FailCodes\[] {`uint32` idx, `uint32` code} - list of failure code and index for all failures in batch.
 
 ### RemoveExpiredClaims
-
-```
-```
 
 ```go
 func RemoveExpiredClaims(params: RemoveExpiredClaimsParams) RemoveExpiredClaimsReturn {}
