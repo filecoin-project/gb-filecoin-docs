@@ -1,8 +1,7 @@
 ---
 description: >-
   This section aims to provide a comprehensive overview of Filecoin to
-  developers and serves as a reference that developers can check back on. We
-  assume readers to have a basic understanding of blockcha
+  developers and serves as a reference that developers can check back on.
 ---
 
 # What is Filecoin
