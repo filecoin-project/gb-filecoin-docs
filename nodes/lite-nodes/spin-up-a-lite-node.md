@@ -169,16 +169,12 @@ The last thing we need to do to get our node setup is to build the package. The 
 
 3.  Once the installation finishes, query the Lotus version to ensure everything is installed successfully and for the correct network:
 
-    {% code title="Input" %}
     ```shell
     lotus --version
     ```
-    {% endcode %}
-    {% code title="Example output" %}
     ```plaintext
     lotus version 1.19.1-dev+mainnet+git.94b621dd5
     ```
-    {% endcode %}
 {% endtab %}
 {% tab title="Calibration" %}
 1.  Remove or delete any existing Lotus configuration files on your system:
@@ -196,16 +192,12 @@ The last thing we need to do to get our node setup is to build the package. The 
 
 3.  Once the installation finishes, query the Lotus version to ensure everything is installed successfully and for the correct network:
 
-    {% code title="Input" %}
     ```shell
     lotus --version
     ```
-    {% endcode %}
-    {% code title="Example output" %}
     ```plaintext
     lotus version 1.19.1-dev+calibrationnet+git.94b621dd5.dirty
     ```
-    {% endcode %}
 
 {% endtab %}
 {% endtabs %}
@@ -218,18 +210,14 @@ Let's start the lite-node by connecting to a remote full-node. We can use the pu
 {% tab title="Mainnet" %}
 1. Create an environment variable called `FULLNODE_API_INFO` and set it to the WebSockets address of the node you want to connect to. At the same time, start the Lotus daemon with the `--lite` tag:
 
-    {% code title="Input" %}
     ```shell
     FULLNODE_API_INFO=wss://wss.mainnet.node.glif.io/apigw/lotus lotus daemon --lite
     ```
-    {% endcode %}
-    {% code title="Example output" %}
     ```plaintext
     2023-01-26T11:18:54.251-0400    INFO    main    lotus/daemon.go:219     lotus repo: /Users/johnny/.lotus
     2023-01-26T11:18:54.254-0400    WARN    cliutil util/apiinfo.go:94      API Token not set and requested, capabilities might be limited.
     ...
     ```
-    {% endcode %}
 
 2. The Lotus daemon will continue to run in this terminal window. All subsequent commands we use should be done in a separate terminal window.
 {% endtab %}
@@ -274,18 +262,14 @@ To send JSON-RPC requests to our lite-node we need to expose the API.
 2. Open the terminal window where your lite-node is running and press `CTRL` + `c` to close the daemon.
 3. In the same window, restart the lite-node:
 
-    {% code title="Input" overflow="wrap" %}
     ```shell
     FULLNODE_API_INFO=wss://wss.mainnet.node.glif.io/apigw/lotus lotus daemon --lite
     ```
-    {% endcode %}
-    {% code title="Example output" %}
     ```plaintext
     2023-01-26T11:18:54.251-0400    INFO    main    lotus/daemon.go:219     lotus repo: /Users/johnny/.lotus
     2023-01-26T11:18:54.254-0400    WARN    cliutil util/apiinfo.go:94      API Token not set and requested, capabilities might be limited
     ...
     ```
-    {% endcode %}
 
 4. The Lotus daemon will continue to run in this terminal window. All subsequent commands we use should be done in a separate terminal window.
 {% endtab %}
@@ -310,18 +294,14 @@ To send JSON-RPC requests to our lite-node we need to expose the API.
 2. Open the terminal window where your lite-node is running and press `CTRL` + `c` to close the daemon.
 3.  In the same window restart the lite-node:
 
-    {% code title="Input" %}
     ```shell
     FULLNODE_API_INFO=wss://wss.calibration.node.glif.io/apigw/lotus lotus daemon --lite
     ```
-    {% endcode %}
-    {% code title="Example output" %}
     ```plaintext
     2023-01-26T11:18:54.251-0400    INFO    main    lotus/daemon.go:219     lotus repo: /Users/johnny/.lotus
     2023-01-26T11:18:54.254-0400    WARN    cliutil util/apiinfo.go:94      API Token not set and requested, capabilities might be limited.
     ...
     ```
-    {% endcode %}
 
 4. The Lotus daemon will continue to run in this terminal window. All subsequent commands we use should be done in a separate terminal window.
 {% endtab %}
@@ -335,16 +315,12 @@ To access privileged JSON-RPC methods, like creating a new wallet, we need to su
 
 1.  Create a new admin token and set the result to a new `LOTUS_ADMIN_KEY` environment variable:
 
-    {% code title="Input" %}
     ```shell
     lotus auth create-token --perm "admin"
     ```
-    {% endcode %}
-    {% code title="Example output" %}
     ```plaintext
     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.um-LqY7g-SDOsMheDRbQ9JIaFzus_Pan0J88VQ6ZLVE
     ```
-    {% endcode %}
 
 2. Keep this key handy. We're going to use it in the next section.
 
@@ -354,15 +330,12 @@ Let's run a couple of commands to see if the JSON-RPC API is set up correctly.
 
 1.  First, let's grab the head of the Filecoin network chain:
 
-    {% code title="Input" %}
     ```shell
     curl -X POST '127.0.0.1:1234/rpc/v0' \
     -H 'Content-Type: application/json' \
     --data '{"jsonrpc":"2.0","id":1,"method":"Filecoin.ChainHead","params":[]}' \
     | jq 
     ```
-    {% endcode %}
-    {% code title="Example output" %}
     ```plaintext
     {
       "jsonrpc": "2.0",
@@ -376,11 +349,9 @@ Let's run a couple of commands to see if the JSON-RPC API is set up correctly.
           },
     ...
     ```
-    {% endcode %}
 
 2.  Next, let's try to create a new wallet. Since this is a privileged method, we need to supply our auth key `eyJhbGc...`:
 
-    {% code title="Input" %}
     ```shell
     curl -X POST '127.0.0.1:1234/rpc/v0' \
     -H 'Content-Type: application/json' \
@@ -388,8 +359,6 @@ Let's run a couple of commands to see if the JSON-RPC API is set up correctly.
     --data '{"jsonrpc":"2.0","id":1,"method":"Filecoin.WalletNew","params":["secp256k1"]}' \
     | jq
     ```
-    {% endcode %}
-    {% code title="Example output" %}
     ```plaintext
     {
       "jsonrpc": "2.0",
@@ -397,13 +366,11 @@ Let's run a couple of commands to see if the JSON-RPC API is set up correctly.
       "id": 1
     }
     ```
-    {% endcode %}
 
     The result field is the public key for our address. The private key is stored within our lite-node.
 
 3.  Set the new address as the default wallet for our lite-node:
 
-    {% code title="Input" %}
     ```shell
     curl -X POST '127.0.0.1:1234/rpc/v0' \
     -H 'Content-Type: application/json' \
@@ -411,8 +378,6 @@ Let's run a couple of commands to see if the JSON-RPC API is set up correctly.
     --data '{"jsonrpc":"2.0","id":1,"method":"Filecoin.WalletSetDefault","params":["t1vuc4eu2wgsdnce2ngygyzuxky3aqijqe7gj5qqa"]}' \
     | jq 
     ```
-    {% endcode %}
-    {% code title="Example output" %}
     ```plaintext
     {
       "jsonrpc": "2.0",
