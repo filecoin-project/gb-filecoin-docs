@@ -17,7 +17,7 @@
   * [Consensus](basics/the-blockchain/consensus.md)
   * [Drand](basics/the-blockchain/drand.md)
   * [Proofs](basics/the-blockchain/proofs.md)
-* [Assets875667](basics/assets/README.md)
+* [Assets](basics/assets/README.md)
   * [The FIL token](basics/assets/the-fil-token.md)
   * [Wallets](basics/assets/wallets.md)
   * [Metamask setup](basics/assets/metamask-setup.md)
