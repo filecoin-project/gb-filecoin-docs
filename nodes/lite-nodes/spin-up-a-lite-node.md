@@ -172,6 +172,9 @@ The last thing we need to do to get our node setup is to build the package. The 
     ```shell
     lotus --version
     ```
+
+    This will output something like:
+
     ```plaintext
     lotus version 1.19.1-dev+mainnet+git.94b621dd5
     ```
@@ -195,6 +198,9 @@ The last thing we need to do to get our node setup is to build the package. The 
     ```shell
     lotus --version
     ```
+
+    This will output something like:
+
     ```plaintext
     lotus version 1.19.1-dev+calibrationnet+git.94b621dd5.dirty
     ```
@@ -213,6 +219,9 @@ Let's start the lite-node by connecting to a remote full-node. We can use the pu
     ```shell
     FULLNODE_API_INFO=wss://wss.mainnet.node.glif.io/apigw/lotus lotus daemon --lite
     ```
+
+    This will output something like:
+
     ```plaintext
     2023-01-26T11:18:54.251-0400    INFO    main    lotus/daemon.go:219     lotus repo: /Users/johnny/.lotus
     2023-01-26T11:18:54.254-0400    WARN    cliutil util/apiinfo.go:94      API Token not set and requested, capabilities might be limited.
@@ -227,6 +236,9 @@ Let's start the lite-node by connecting to a remote full-node. We can use the pu
     ```shell
     FULLNODE_API_INFO=wss://wss.calibration.node.glif.io/apigw/lotus lotus daemon --lite
     ```
+
+    This will output something like:
+
     ```plaintext
     2023-01-26T11:18:54.251-0400    INFO    main    lotus/daemon.go:219     lotus repo: /Users/johnny/.lotus
     2023-01-26T11:18:54.254-0400    WARN    cliutil util/apiinfo.go:94      API Token not set and requested, capabilities might be limited.
@@ -265,6 +277,9 @@ To send JSON-RPC requests to our lite-node we need to expose the API.
     ```shell
     FULLNODE_API_INFO=wss://wss.mainnet.node.glif.io/apigw/lotus lotus daemon --lite
     ```
+
+    This will output something like:
+
     ```plaintext
     2023-01-26T11:18:54.251-0400    INFO    main    lotus/daemon.go:219     lotus repo: /Users/johnny/.lotus
     2023-01-26T11:18:54.254-0400    WARN    cliutil util/apiinfo.go:94      API Token not set and requested, capabilities might be limited
@@ -297,6 +312,9 @@ To send JSON-RPC requests to our lite-node we need to expose the API.
     ```shell
     FULLNODE_API_INFO=wss://wss.calibration.node.glif.io/apigw/lotus lotus daemon --lite
     ```
+
+    This will output something like:
+
     ```plaintext
     2023-01-26T11:18:54.251-0400    INFO    main    lotus/daemon.go:219     lotus repo: /Users/johnny/.lotus
     2023-01-26T11:18:54.254-0400    WARN    cliutil util/apiinfo.go:94      API Token not set and requested, capabilities might be limited.
@@ -318,6 +336,9 @@ To access privileged JSON-RPC methods, like creating a new wallet, we need to su
     ```shell
     lotus auth create-token --perm "admin"
     ```
+
+    This will output something like:
+
     ```plaintext
     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.um-LqY7g-SDOsMheDRbQ9JIaFzus_Pan0J88VQ6ZLVE
     ```
@@ -336,6 +357,9 @@ Let's run a couple of commands to see if the JSON-RPC API is set up correctly.
     --data '{"jsonrpc":"2.0","id":1,"method":"Filecoin.ChainHead","params":[]}' \
     | jq 
     ```
+
+    This will output something like:
+
     ```plaintext
     {
       "jsonrpc": "2.0",
@@ -359,6 +383,9 @@ Let's run a couple of commands to see if the JSON-RPC API is set up correctly.
     --data '{"jsonrpc":"2.0","id":1,"method":"Filecoin.WalletNew","params":["secp256k1"]}' \
     | jq
     ```
+
+    This will output something like:
+
     ```plaintext
     {
       "jsonrpc": "2.0",
@@ -378,6 +405,9 @@ Let's run a couple of commands to see if the JSON-RPC API is set up correctly.
     --data '{"jsonrpc":"2.0","id":1,"method":"Filecoin.WalletSetDefault","params":["t1vuc4eu2wgsdnce2ngygyzuxky3aqijqe7gj5qqa"]}' \
     | jq 
     ```
+
+    This will output something like:
+
     ```plaintext
     {
       "jsonrpc": "2.0",
