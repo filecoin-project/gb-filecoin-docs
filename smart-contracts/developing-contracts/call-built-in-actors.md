@@ -247,7 +247,7 @@ mkdir libs
 cd libs
 ```
 
-4. Copy the Zondax contracts with the methods you wish to call from [the contracts folder](https://github.com/Zondax/filecoin-solidity/tree/master/contracts/v0.8) into `libs`.
+4. Copy the Zondax contracts with the methods you wish to call from [the contracts folder](https://github.com/filecoin-project/filecoin-solidity/tree/master/contracts/v0.8) into `libs`.
 
 ### Call a built-in actor
 
