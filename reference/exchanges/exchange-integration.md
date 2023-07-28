@@ -27,9 +27,6 @@ A snapshot only has the state trees from the recent tipset (2000 epochs) onward 
 
 You can check the sync status by running `lotus sync status`. You are fully synced when the `Height` difference is `0`. Lotus will output any sync error.
 
-```
-```
-
 ```shell
 lotus sync status
 
@@ -122,9 +119,6 @@ Here are some Curl examples for connecting to a Lotus node using the JSON-RPC AP
 
 [**ChainHead**](https://lotus.filecoin.io/reference/lotus/chain/#chainhead)
 
-```
-```
-
 ```shell
 curl -X POST  -H "Content-Type: application/json"  -H "Authorization: Bearer $(cat ~/.lotus/token)"  --data '{
    "jsonrpc":"2.0",
@@ -137,9 +131,6 @@ curl -X POST  -H "Content-Type: application/json"  -H "Authorization: Bearer $(c
 ```
 
 [**ChainGetTipSetByHeight**](https://lotus.filecoin.io/reference/lotus/chain/#chaingettipset)
-
-```
-```
 
 ```shell
 curl -X POST -H "Content-Type: application/json"
@@ -163,9 +154,6 @@ curl -X POST -H "Content-Type: application/json"
 
 [**ChainGetParentMessages**](https://lotus.filecoin.io/reference/lotus/chain/#chaingetparentmessages)
 
-```
-```
-
 ```shell
 curl -X POST -H "Content-Type: application/json"
   -H "Authorization: Bearer $(cat ~/.lotus/token)"
@@ -185,9 +173,6 @@ curl -X POST -H "Content-Type: application/json"
 
 [**WalletNew**](https://lotus.filecoin.io/reference/lotus/wallet/#walletnew)
 
-```
-```
-
 ```shell
 curl -X POST -H "Content-Type: application/json"
   -H "Authorization: Bearer $(cat ~/.lotus/token)"
@@ -205,9 +190,6 @@ curl -X POST -H "Content-Type: application/json"
 
 [**WalletBalance**](https://lotus.filecoin.io/reference/lotus/wallet/#walletbalance)
 
-```
-```
-
 ```shell
 curl -X POST -H "Content-Type: application/json"
   -H "Authorization: Bearer $(cat ~/.lotus/token)"
@@ -224,9 +206,6 @@ curl -X POST -H "Content-Type: application/json"
 `f1d7x4euqwtlk2bqzhclr6gubkufezgddkqftsnky` is the account address.
 
 [**MpoolPushMessage**](https://lotus.filecoin.io/reference/lotus/mpool/#mpoolpushmessage)
-
-```
-```
 
 ```shell
 curl -X POST -H 'Content-Type: application/json'
@@ -279,9 +258,6 @@ Call [StateCompute](https://lotus.filecoin.io/reference/lotus/state/#statecomput
 ### How can I check if my transaction is stuck?
 
 The Lotus RPC method to retrieve the list of transactions waiting on the mempool is `Filecoin.MpoolPending`. The RPC call is:
-
-```
-```
 
 ```json
 {

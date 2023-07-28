@@ -22,9 +22,6 @@ The AddPiece process is not a very intensive process and only uses some CPU core
 
 Consider limiting the AP process to a few cores by using the [`taskset` command](https://man7.org/linux/man-pages/man1/taskset.1.html), where `<xx-xx>` is the range on which cores the process needs to run on:
 
-```
-```
-
 ```shell
 taskset -c <xx-xx> lotus-worker run ...
 ```
@@ -58,9 +55,6 @@ In the case of a [Snap Deal](../filecoin-deals/snap-deals.md), an existing commi
 When PC2 is complete for a sector, a _precommit_ message is posted on-chain. If batching is configured, Lotus will batch these messages to avoid sending messages to the chain for every single sector. In addition, there is a configurable timeout interval, after which the message will be sent on-chain. This timeout is set to 24 hours by default. These configuration parameters are found in the `.lotusminer/config.toml` file.
 
 If you want to force the pre-commit message on-chain for testing purposes, run:
-
-```
-```
 
 ```shell
 lotus-miner sectors batching precommit --publish-now

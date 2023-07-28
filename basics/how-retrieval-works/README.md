@@ -6,4 +6,3 @@ description: >-
 
 # How retrieval works
 
-###

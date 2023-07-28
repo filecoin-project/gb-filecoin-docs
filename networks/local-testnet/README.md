@@ -96,23 +96,19 @@ To build the nodes, youâ€™ll need some specific software. Run the following comm
     ```
 
 
-3.  You may need to export `/usr/local/go/bin` to your `$PATH`. This process changes depending on which shell youâ€™re using:\
+3. You may need to export `/usr/local/go/bin` to your `$PATH`. This process changes depending on which shell youâ€™re using:
 
+| Shell | Export to $PATH example                                                       |
+| ----- | ----------------------------------------------------------------------------- |
+| Bash  | `echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc && source ~/.bashrc` |
+| ZSH   | `echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.zshrc && source ~/.zshrc`   |
 
-    | Shell | Export to `$PATH` example                                                     |
-    | ----- | ----------------------------------------------------------------------------- |
-    | Bash  | `echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc && source ~/.bashrc` |
-    | ZSH   | `echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.zshrc && source ~/.zshrc`   |
+4. Install Rust and source the `~/.cargo/env` config file:
 
-
-4.  Install Rust and source the `~/.cargo/env` config file:\
-
-
-    ```shell
-    curl https://sh.rustup.rs -sSf | sh -s -- -y
-    source "$HOME/.cargo/env"
-    ```
-
+```shell
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+source "$HOME/.cargo/env"
+```
 
 5. Done! You can move on to the [Pre-build](https://docs.filecoin.io/networks/local-testnet/set-up/#pre-build) section.
 {% endtab %}
@@ -129,7 +125,7 @@ Before we can build the Lotus binaries, thereâ€™s some setup we need to do. Weâ€
 
     ```shell
     git clone https://github.com/filecoin-project/lotus.git ~/lotus-devnet
-    cd lotus/
+    cd lotus
     ```
 
 
@@ -202,8 +198,7 @@ Before we can build the Lotus binaries, thereâ€™s some setup we need to do. Weâ€
     ```
 
     \
-    If in doubt, ignore this command and move on to [the next section](https://docs.filecoin.io/networks/local-testnet/set-up/#build).\
-
+    If in doubt, ignore this command and move on to [the next section](https://docs.filecoin.io/networks/local-testnet/set-up/#build).
 4. Done! You can move on to the [Build](https://docs.filecoin.io/networks/local-testnet/set-up/#build) section.
 {% endtab %}
 {% endtabs %}
@@ -230,8 +225,7 @@ Before we can build the Lotus binaries, thereâ€™s some setup we need to do. Weâ€
     ```
 
     \
-    This process will take about 5 minutes to complete.\
-
+    This process will take about 5 minutes to complete.
 2.  Fetch the proving parameters for a 2048-byte sector size:\
 
 
@@ -251,8 +245,7 @@ Before we can build the Lotus binaries, thereâ€™s some setup we need to do. Weâ€
     ```
 
     \
-    This process downloads a few files totalling to around 2 GiB in size. Depending on your internet speed, this process can take a few minutes to complete.\
-
+    This process downloads a few files totalling to around 2 GiB in size. Depending on your internet speed, this process can take a few minutes to complete.
 3.  Pre-seal two sectors for the genesis block:\
 
 
@@ -271,8 +264,6 @@ Before we can build the Lotus binaries, thereâ€™s some setup we need to do. Weâ€
 
     ...
     ```
-
-
 4.  Create the genesis block:\
 
 
@@ -326,8 +317,7 @@ As mentioned earlier, we will be running two types of a node: a storage provider
     ```
 
     \
-    Because environmental variables are reset when you open a new terminal window, these variables must be exported every time we start a new terminal.\
-
+    Because environmental variables are reset when you open a new terminal window, these variables must be exported every time we start a new terminal.
 4.  Start the client node using `lotus daemon`:\
 
 
@@ -369,8 +359,6 @@ As mentioned earlier, we will be running two types of a node: a storage provider
     export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
     export CGO_CFLAGS="-D__BLST_PORTABLE__"
     ```
-
-
 4.  Import the genesis miner key:\
 
 
@@ -385,8 +373,6 @@ As mentioned earlier, we will be running two types of a node: a storage provider
     ```plaintext
     imported key t3q4o7gkwe7p7xokhgws4rwntj7yqfhpj5pm6cqc7dycl7cwk4uvgh2odwdvge5re7ne5gcc6xluifss5uu5cq successfully!
     ```
-
-
 5.  Initialize the genesis miner:\
 
 
@@ -408,8 +394,7 @@ As mentioned earlier, we will be running two types of a node: a storage provider
     ```
 
     \
-    This process take a few minutes to complete.\
-
+    This process take a few minutes to complete.
 6.  Start the storage provider node with `lotus-miner run`:\
 
 
@@ -449,8 +434,6 @@ There are multiple ways to create a new wallet. The simplest way is to use the L
     export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
     export CGO_CFLAGS="-D__BLST_PORTABLE__"
     ```
-
-
 4.  Create a new wallet with `lotus wallet new`:\
 
 
@@ -522,8 +505,7 @@ We can now send FIL from the pre-mined `t3q4o7g...` account to our new `t1snly7.
     ```
 
     \
-    In the above example, the `t3q4o...` address is the _pre-mined_ address we created in an earlier step. This has a very large balance of FIL. We want to send FIL from this pre-mined address to our new `t1snl...` address.\
-
+    In the above example, the `t3q4o...` address is the _pre-mined_ address we created in an earlier step. This has a very large balance of FIL. We want to send FIL from this pre-mined address to our new `t1snl...` address.
 3.  Create the send request with `lotus send`, supplying the pre-mined `t3q4o...` address as the `--from` address, the new `t1snl...` address as the receiving address, and the amount of FIL we want to send:\
 
 
@@ -638,8 +620,7 @@ Youâ€™ll eventually want to stop your local devnet from running or may need to r
     ```
 
     \
-    This command will continue to run. Leave this window open.\
-
+    This command will continue to run. Leave this window open.
 3.  For the storage provider node, open a new terminal window, move into the `~/lotus-devnet` directory, and export the devnnet-specific variables again with:\
 
 
