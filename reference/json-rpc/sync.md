@@ -14,8 +14,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -35,8 +33,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -63,8 +59,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -126,8 +120,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -149,8 +141,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -186,8 +176,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -275,8 +263,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -296,8 +282,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [

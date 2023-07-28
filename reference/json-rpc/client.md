@@ -14,8 +14,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -25,8 +23,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -45,8 +41,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -66,8 +60,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -85,8 +77,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -128,8 +118,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -141,8 +129,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -162,8 +148,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -175,8 +159,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -193,8 +175,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -207,8 +187,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -242,8 +220,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -265,8 +241,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -278,8 +252,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -369,8 +341,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -390,8 +360,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -483,8 +451,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -547,8 +513,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -568,8 +532,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -582,8 +544,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -604,8 +564,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -651,8 +609,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -746,8 +702,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -772,8 +726,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -838,8 +790,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -853,8 +803,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -884,8 +832,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -896,8 +842,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -920,8 +864,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -939,8 +881,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -960,8 +900,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -1002,8 +940,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -1021,8 +957,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -1055,8 +989,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -1076,8 +1008,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -1113,8 +1043,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [

@@ -14,8 +14,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -35,8 +33,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -63,8 +59,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -76,8 +70,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -145,8 +137,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -158,8 +148,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -224,8 +212,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -243,8 +229,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -256,8 +240,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -285,8 +267,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -303,8 +283,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -337,8 +315,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -348,8 +324,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -368,8 +342,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -381,8 +353,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -417,8 +387,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -430,8 +398,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -447,8 +413,6 @@ Response:
 
 ChainGetPath returns a set of revert/apply operations needed to get from one tipset to another, for example:
 
-```
-```
 
 ```plaintext
        to
@@ -467,8 +431,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -493,8 +455,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -517,8 +477,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -546,8 +504,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -575,8 +531,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -593,8 +547,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -612,8 +564,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -631,8 +581,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -650,8 +598,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -673,8 +619,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -694,8 +638,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -718,8 +660,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -739,8 +679,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -765,8 +703,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -781,8 +717,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -799,8 +733,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [

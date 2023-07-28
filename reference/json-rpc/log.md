@@ -8,8 +8,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -41,8 +39,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -56,8 +52,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [

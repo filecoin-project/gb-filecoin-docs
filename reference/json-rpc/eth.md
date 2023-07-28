@@ -16,8 +16,6 @@ This method is intended to return a list of addresses owned by client. However, 
 
 Example:
 
-```
-```
 
 ```curl
 curl --location --request POST 'https://api.node.glif.io' \
@@ -47,8 +45,6 @@ Returns the number of most recent block.
 
 Example:
 
-```
-```
 
 ```curl
 curl --location --request POST 'https://api.node.glif.io' \
@@ -88,8 +84,6 @@ This documentation section is a work-in-progress.
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -114,8 +108,6 @@ Returns the currently configured chain ID, a value used in replay-protected tran
 
 Example:
 
-```
-```
 
 ```curl
 curl --location --request POST 'https://api.node.glif.io' \    src/languages update/json-rpc-examples
@@ -155,8 +147,6 @@ This documentation section is a work-in-progress.
 
 Example:
 
-```
-```
 
 ```curl
 curl --location --request POST 'https://api.node.glif.io' \
@@ -194,8 +184,6 @@ Returns a collection of historical gas information.
 
 Example:
 
-```
-```
 
 ```curl
 curl --location --request POST 'https://api.node.glif.io' \
@@ -217,8 +205,6 @@ Returns the current price per gas in wei.
 
 Example:
 
-```
-```
 
 ```curl
 curl --location --request POST 'https://api.node.glif.io' \
@@ -255,8 +241,6 @@ Input:
    * `finalized`: the most recent crypto-economically secure block, that has been accepted by >2/3 of validators. Cannot be reorganized outside of manual intervention driven by community coordination. Intuitively, this block is very unlikely to be reorganized.
    * `earliest` - The lowest numbered block the client has available. Intuitively, you can think of this as the first block created.
 
-```
-```
 
 ```curl
 curl --location --request POST 'https://api.node.glif.io' \
@@ -287,8 +271,6 @@ Returns information about a block by tipset, also known as a block hash.
     * `string`: Tipset of block
     * `boolean`: If true it returns the full transaction objects, if false only the hashes of the transactions. Defaults to false.
 
-```
-```
 
 ```json
 [
@@ -306,8 +288,6 @@ Returns information about a block by block number.
   * `QUANTITY|TAG`: integer of a block number, or the string `earliest`, `latest` or `pending`, as in the default block parameter.
   * `Boolean`: If `true` it returns the full transaction objects, if `false` only the hashes of the transactions.
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -357,8 +337,6 @@ Returns the number of messages in the tipset.
 * Permissions: read
 * Inputs:
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -394,8 +372,6 @@ Returns the number of transactions in a block matching the given tipset.
 
 Example:
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -432,8 +408,6 @@ This section of documentation is a work-in-progress.
     * `finalized` - The most recent crypto-economically secure block, that has been accepted by >2/3 of validators. Cannot be reorganized outside of manual intervention driven by community coordination. Intuitively, this block is very unlikely to be reorganized.
     * `earliest` - The lowest numbered block the client has available. Intuitively, you can think of this as the first block created.
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -462,8 +436,6 @@ Permissions: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -473,8 +445,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -490,8 +460,6 @@ Permissions: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -501,8 +469,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -518,8 +484,6 @@ Permissions: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -535,8 +499,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -550,8 +512,6 @@ Permissions: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -569,8 +529,6 @@ Permissions: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -581,8 +539,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -612,8 +568,6 @@ Permissions: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -624,8 +578,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -655,8 +607,6 @@ Permissions: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -666,8 +616,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -697,8 +645,6 @@ Permissions: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -717,8 +663,6 @@ Permissions: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -728,8 +672,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -771,8 +713,6 @@ Returns a fee per gas that is an estimate of how much you can pay as a priority 
 * Permissions: read
 * Inputs: none
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -800,8 +740,6 @@ Installs a persistent filter to notify when a new block arrives.
 * Permissions: write
 * Inputs: none
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -840,8 +778,6 @@ Creates a filter object, based on filter options, to notify when the state chang
           * `finalized`: The most recent crypto-economically secure block, that has been accepted by >2/3 of validators. Cannot be reorganized outside of manual intervention driven by community coordination. Intuitively, this block is very unlikely to be reorganized.
           * `earliest`: The lowest numbered block the client has available. Intuitively, you can think of this as the first block created.
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -875,8 +811,6 @@ Creates a filter in the node, to notify when new pending transactions arrive. To
 * Permissions: write
 * Inputs: none
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -904,8 +838,6 @@ Returns the current ethereum protocol version.
 * Permissions: read
 * Inputs: none
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -933,8 +865,6 @@ Creates a new message call transaction or a contract creation for signed transac
 * Permissions: read
 * Inputs:
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -966,8 +896,6 @@ Uninstalls a filter with given id.
 * Permissions: write
 * Inputs:
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \
@@ -996,8 +924,6 @@ Unsubscribe from different Ethereum event types with a regular RPC call with `et
 * Inputs:
   * `Subscription ID`: as previously returned from an `eth_subscribe` call.
 
-```
-```
 
 ```shell
 curl --location --request POST 'https://api.node.glif.io' \

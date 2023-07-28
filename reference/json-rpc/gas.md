@@ -8,8 +8,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -50,8 +48,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -91,8 +87,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -120,8 +114,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -156,8 +148,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {

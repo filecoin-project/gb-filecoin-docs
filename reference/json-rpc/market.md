@@ -8,8 +8,6 @@ Perms: sign
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -21,8 +19,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -38,8 +34,6 @@ Perms: sign
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -57,8 +51,6 @@ Perms: sign
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -77,8 +69,6 @@ Perms: sign
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -90,8 +80,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -107,8 +95,6 @@ Perms: sign
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -120,8 +106,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {

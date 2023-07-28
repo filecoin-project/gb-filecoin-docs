@@ -6,8 +6,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -25,8 +23,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -36,8 +32,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 [

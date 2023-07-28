@@ -8,8 +8,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [

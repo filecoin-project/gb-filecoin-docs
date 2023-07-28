@@ -8,8 +8,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -26,8 +24,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -45,8 +41,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -63,8 +57,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -83,8 +75,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -105,8 +95,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -125,8 +113,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -154,8 +140,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -177,8 +161,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -204,8 +186,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -226,8 +206,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -243,8 +221,6 @@ Perms: write
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -260,8 +236,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -271,8 +245,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -289,8 +261,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -300,8 +270,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -322,8 +290,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -333,8 +299,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
@@ -367,8 +331,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -387,8 +349,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -404,8 +364,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -425,8 +383,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -440,8 +396,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -461,8 +415,6 @@ Inputs: `null`
 
 Response:
 
-```
-```
 
 ```json
 [
@@ -492,8 +444,6 @@ Perms: admin
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -519,8 +469,6 @@ Perms: read
 
 Inputs:
 
-```
-```
 
 ```json
 [
@@ -530,8 +478,6 @@ Inputs:
 
 Response:
 
-```
-```
 
 ```json
 {
