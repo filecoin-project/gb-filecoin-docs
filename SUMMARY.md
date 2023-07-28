@@ -64,7 +64,7 @@
   * [Return-on-investment](storage-providers/filecoin-deals/return-on-investment.md)
 * [Architecture](storage-providers/architecture/README.md)
   * [Lotus components](storage-providers/architecture/lotus-components.md)
-  * [Lotus automation](storage-providers/architecture/lotus-automation.md)
+  * [Storage provider automation](storage-providers/architecture/lotus-automation.md)
   * [Sealing pipeline](storage-providers/architecture/sealing-pipeline.md)
   * [Sealing rate](storage-providers/architecture/sealing-rate.md)
   * [Sealing-as-a-service](storage-providers/architecture/sealing-as-a-service.md)

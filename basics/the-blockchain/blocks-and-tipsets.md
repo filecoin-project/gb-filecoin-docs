@@ -19,6 +19,19 @@ Every block refers to at least one _parent block_; that is, a block produced in 
 
 A _message_ represents communication between two actors, and thus changes in network state. The messages are listed in their order of appearance, deduplicated and returned in canonical order of execution. So, in other words, a block describes all changes to the network state in a given epoch.
 
+### Blocktime
+
+Blocktime is a concept that represents the average time it takes to mine or produce a new block on a blockchain. In Ethereum, for example, the blocktime is approximately 15 seconds on average, meaning that a new block is added to the Ethereum blockchain roughly every 15 seconds.
+
+In the Filecoin network, storage providers compete to produce blocks by providing storage capacity and participating in the consensus protocol. The block time determines how frequently new blocks are added to the blockchain, which impacts the overall speed and responsiveness of the network.
+
+Filecoin has a block time of 30 seconds, and this duration was chosen for two main reasons:
+
+* **Hardware requirements**: If the block time were faster while maintaining the same gas limit or the number of messages per block, it would lead to increased hardware requirements. This includes the need for more storage space to accommodate the larger chain data resulting from more frequent block production.
+* **Storage provider operations**: The block time also takes into account the various operations that occur during that duration on the storage provider (SP) side. As SPs generate new blocks, the 30 second block time allows for the necessary processes and computations to be carried out effectively. If the blocktime were shorter, SPs would encounter significantly more blocktime failures.
+
+By considering these factors, the Filecoin network has established a block time of 30 seconds, balancing the need for efficient operations and hardware requirements.
+
 ## Tipsets
 
 As described in [Consensus](consensus.md), multiple potential block producers may be elected via Expected Consensus (EC) to create a block in each epoch, which means that more than one valid block may be produced in a given epoch. All valid blocks with the same height and same parent block are assembled into a group called a _tipset_.

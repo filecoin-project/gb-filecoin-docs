@@ -4,6 +4,10 @@ description: Public RPC endpoints are available for the Filecoin mainnet.
 
 # RPCs
 
+{% hint style="info" %}
+[Chainlist](https://chainlist.org/chain/314159) contains a dynamically updated list of available RPCs along with stats like current block-height and latency. [Find out more at chainlist.org](https://chainlist.org/chain/314159)
+{% endhint %}
+
 ## [Ankr](https://ankr.com)
 
 * HTTPS: `https://rpc.ankr.com/filecoin`
@@ -34,7 +38,6 @@ Please note that publicly available hosted endpoints **only guarantee 2000 of th
     ```
 
     When using a lite-node, omit `/rpc/v1` from Glif’s WebSocket address.
-
 * [Glif documentation](https://hosting.glif.io/)
 
 ## [NOWNodes](https://nownodes.io/)

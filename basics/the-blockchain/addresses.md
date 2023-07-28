@@ -9,13 +9,7 @@ description: >-
 
 All Filecoin addresses begin with an `f` to indicate the network (Filecoin), followed by any of the address prefix numbers (`0`, `1`, `2`, `3`, `4`) to indicate the address type. There are five address types:
 
-| Address prefix | Description                                                                        |
-| -------------- | ---------------------------------------------------------------------------------- |
-| `0`            | An ID address.                                                                     |
-| `1`            | A [SECP256K1](https://en.bitcoin.it/wiki/Secp256k1) public key address.            |
-| `2`            | An actor address.                                                                  |
-| `3`            | A [BLS](https://en.wikipedia.org/wiki/BLS\_digital\_signature) public key address. |
-| `4`            | Extensible, user-defined actor addresses.                                          |
+<table><thead><tr><th width="161">Address prefix</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td>An ID address.</td></tr><tr><td><code>1</code></td><td>A <a href="https://en.bitcoin.it/wiki/Secp256k1">SECP256K1</a> public key address.</td></tr><tr><td><code>2</code></td><td>An actor address.</td></tr><tr><td><code>3</code></td><td>A <a href="https://en.wikipedia.org/wiki/BLS_digital_signature">BLS</a> public key address.</td></tr><tr><td><code>4</code></td><td>Extensible, user-defined actor addresses. <code>f410</code> addresses refers to Ethereum-compatible address space, each <code>f410</code> address is equivalent to an <code>0x</code> address.</td></tr></tbody></table>
 
 Each of the address types is described below.
 

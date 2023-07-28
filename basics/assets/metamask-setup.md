@@ -13,38 +13,37 @@ Chainlist is a website that lets users easily connect their wallets to EVM-compa
 
 {% tabs %}
 {% tab title="Mainnet" %}
-1. Search for [`Filecoin`](https://chainlist.org/chain/314) on [chainlist.org](https://chainlist.org).
-2. Click **Connect Wallet**.
-3. Click **Approve** when prompted to _Allow this site to add a network_.
-4. Click **Switch network** when prompted by MetaMask.
-5. Open MetaMask from the browser extensions tab.
-6. You should see _Filecoin_ listed at the top.
+1. Navigate to [chainlist.network](https://chainlist.network).
+2. Search for `Filecoin Mainnet`.
+3. Click **Connect Wallet**.
+4. Click **Approve** when prompted to _Allow this site to add a network_.
+5. Click **Switch network** when prompted by MetaMask.
+6. Open MetaMask from the browser extensions tab.
+7. You should see _Filecoin_ listed at the top.
 
 You can now use MetaMask to interact with the Filecoin network.
 {% endtab %}
 
 {% tab title="Calibration" %}
-1. Go [chainlist.org](https://chainlist.org).
-2. Click the **Include Testnets** checkbox.
-3. Search for [`Filecoin Calibration`](https://chainlist.org/chain/314159).
-4. Click **Connect Wallet**.
-5. Click **Approve** when prompted to _Allow this site to add a network_.
-6. You may be shown a warning that you are connecting to a test network. If prompted, click **Accept**.
-7. Click **Switch network** when prompted by MetaMask.
-8. Open MetaMask from the browser extensions tab. You should see _Filecoin Calibration_ listed at the top.
+1. Navigate to [chainlist.network](https://chainlist.network).
+2. Search for `Filecoin Calibration`.
+3. Click **Connect Wallet**.
+4. Click **Approve** when prompted to _Allow this site to add a network_.
+5. You may be shown a warning that you are connecting to a test network. If prompted, click **Accept**.
+6. Click **Switch network** when prompted by MetaMask.
+7. Open MetaMask from the browser extensions tab. You should see _Filecoin Calibration_ listed at the top.
 
 You can now use MetaMask to interact with the Filecoin network.
 {% endtab %}
 
 {% tab title="Local testnet" %}
-1. Go [chainlist.org](https://chainlist.org).
-2. Click the **Include Testnets** checkbox.
-3. Search for [`Filecoin Local testnet`](https://chainlist.org/chain/31415926).
-4. Click **Connect Wallet**.
-5. Click **Approve** when prompted to _Allow this site to add a network_.
-6. You may be shown a warning that you are connecting to a test network. If prompted, click **Accept**.
-7. Click **Switch network** when prompted by MetaMask.
-8. Open MetaMask from the browser extensions tab. You should see _Filecoin Local testnet_ listed at the top.
+1. Navigate to [chainlist.network](https://chainlist.network).
+2. Search for `Filecoin Local testnet`.
+3. Click **Connect Wallet**.
+4. Click **Approve** when prompted to _Allow this site to add a network_.
+5. You may be shown a warning that you are connecting to a test network. If prompted, click **Accept**.
+6. Click **Switch network** when prompted by MetaMask.
+7. Open MetaMask from the browser extensions tab. You should see _Filecoin Local testnet_ listed at the top.
 
 You can now use MetaMask to interact with the Filecoin network.
 {% endtab %}
@@ -86,7 +85,7 @@ The process for configuring MetaMask to use Filecoin is fairly simple, but has s
 {% endtab %}
 {% endtabs %}
 
-7. Pick one a block explorers from the [Networks section](broken-reference), and enter the URL into the **Block explorer (optional)** field.
+7. Pick one a block explorers from the [Networks section](broken-reference/), and enter the URL into the **Block explorer (optional)** field.
 8. Review the values in the fields and click **Save**.
 9. The Filecoin network should now be shown in your MetaMask window.
 10. Done!

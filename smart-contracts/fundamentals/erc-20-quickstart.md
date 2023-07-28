@@ -39,9 +39,9 @@ Before we can interact with the Filecoin network, we need funds. But before we c
 
 ### Switch networks
 
-You may notice that we are currently connected to the **Ethereum Mainnet**. We need to point MetaMask to the Filecoin network, specifically the [Calibration testnet](../../networks/calibration/). We’ll use a website called [chainlist.org](https://chainlist.org/) to give MetaMask the information it needs quickly.
+You may notice that we are currently connected to the **Ethereum Mainnet**. We need to point MetaMask to the Filecoin network, specifically the [Calibration testnet](../../networks/calibration/). We’ll use a website called [chainlist.network](https://chainlist.network) to give MetaMask the information it needs quickly.
 
-1. Go to [chainlist.org](https://chainlist.org/).
+1. Go to [chainlist.network](https://chainlist.network).
 2.  Enable the **Testnets** toggle and enter `Filecoin` into the search bar.
 
     ![Search for Filecoin testnets in Chainlist.](https://docs.filecoin.io/smart-contracts/fundamentals/erc-20-quickstart/chainlist-search-for-filecoin-testnets\_huc27ede2cc3f9bb9a8b1870794192d0bd\_183995\_1440x0\_resize\_q75\_h2\_box\_3.webp)
